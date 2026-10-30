@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-const isGitHubPages = process.env.GITHUB_PAGES === 'true'
-
 const nextConfig = {
   output: 'export',
+  basePath: '/major-sports',
   trailingSlash: true,
+
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -12,15 +12,11 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
   },
+
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
-  ...(isGitHubPages && {
-    basePath: '/major-sports',
-    assetPrefix: '/major-sports/',
-  }),
 }
 
 module.exports = nextConfig
