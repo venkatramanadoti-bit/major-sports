@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  brand       String?
+  category    String
+  description String?
+  price       Float
+  image       String?
+  inStock     Boolean  @default(true)
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+  @@index([featured])
+  @@index([inStock])
+}
+
+model StoreSettings {
+  id                String  @id @default(cuid())
+  storeName         String  @default("MAJOR SPORTS")
+  address           String  @default("Phase B, Plot No. 44 Part, Next to Sakshi Pharmacy, Near Shivaji Statue, NJR KLR Nagar, Medchal, Secunderabad, Telangana 501401")
+  phone             String?
+  whatsappNumber    String  @default("06302324007")
+  googleMapsUrl     String  @default("https://maps.app.goo.gl/bcFHEGuExfcXQLDK8?g_st=aw")
+  openingHours      String?
+  shortDescription  String  @default("Your local sports gear hub in Medchal, Secunderabad. Explore sports equipment, accessories and gear.")
+  heroHeading       String  @default("Your Local Sports Gear Hub")
+  heroDescription   String  @default("Explore sports equipment, accessories and gear at MAJOR SPORTS, Medchal. Visit our store or contact us directly for product availability and assistance.")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model ContactEnquiry {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String?
+  email     String?
+  message   String
+  status    String   @default("New")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model AdminSession {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
