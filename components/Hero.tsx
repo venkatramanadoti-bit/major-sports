@@ -35,14 +35,14 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" aria-labelledby="hero-heading">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/major-sports-store-1.svg"
-          alt="MAJOR SPORTS store interior showing sports equipment, badminton rackets, balls, bicycles and shelves"
+          src="/images/major-sports-store-interior.svg"
+          alt="MAJOR SPORTS store interior showing badminton rackets, cricket equipment, footballs, fitness gear and sports accessories on display shelves"
           fill
           priority
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/80 to-navy/60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/60 via-navy/40 to-navy/20" aria-hidden="true" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-28">
