@@ -27,7 +27,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 18500,
     category: 'Badminton',
     brand: 'Yonex',
-    image: '/images/products/yonex-astrox-77-pro.svg',
+    image: '/images/products/yonex-astrox-77-pro.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -46,7 +46,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 14900,
     category: 'Badminton',
     brand: 'Li-Ning',
-    image: '/images/products/linning-aeronaut-9000c.svg',
+    image: '/images/products/linning-aeronaut-9000c.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -65,7 +65,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 16200,
     category: 'Badminton',
     brand: 'Victor',
-    image: '/images/products/victor-thruster-k9900.svg',
+    image: '/images/products/victor-thruster-k9900.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -84,7 +84,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 450,
     category: 'Badminton',
     brand: 'Yonex',
-    image: '/images/products/yonex-mavis-350.svg',
+    image: '/images/products/yonex-mavis-350.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -102,7 +102,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 1800,
     category: 'Badminton',
     brand: 'Li-Ning',
-    image: '/images/products/linning-a800-feather.svg',
+    image: '/images/products/linning-a800-feather.jpg',
     inStock: false,
     featured: false,
     specifications: {
@@ -122,7 +122,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 42000,
     category: 'Cricket',
     brand: 'SG',
-    image: '/images/products/sg-players-edition.svg',
+    image: '/images/products/sg-players-edition.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -141,7 +141,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 38500,
     category: 'Cricket',
     brand: 'Kookaburra',
-    image: '/images/products/kookaburra-kahuna-pro.svg',
+    image: '/images/products/kookaburra-kahuna-pro.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -160,7 +160,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 29900,
     category: 'Cricket',
     brand: 'Gray-Nicolls',
-    image: '/images/products/graynicolls-legend.svg',
+    image: '/images/products/graynicolls-legend.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -178,7 +178,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 2400,
     category: 'Cricket',
     brand: 'SG',
-    image: '/images/products/sg-tournament-ball.svg',
+    image: '/images/products/sg-tournament-ball.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -197,7 +197,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 3200,
     category: 'Cricket',
     brand: 'DSC',
-    image: '/images/products/dsc-krunch-kashmir.svg',
+    image: '/images/products/dsc-krunch-kashmir.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -217,7 +217,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 12500,
     category: 'Football',
     brand: 'Nike',
-    image: '/images/products/nike-flight-ball.svg',
+    image: '/images/products/nike-flight-ball.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -236,7 +236,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 11800,
     category: 'Football',
     brand: 'Adidas',
-    image: '/images/products/adidas-al-rihla-pro.svg',
+    image: '/images/products/adidas-al-rihla-pro.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -255,7 +255,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 3200,
     category: 'Football',
     brand: 'Puma',
-    image: '/images/products/puma-future-7.svg',
+    image: '/images/products/puma-future-7.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -274,7 +274,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 18500,
     category: 'Football',
     brand: 'Nike',
-    image: '/images/products/tiempo-legend-10.svg',
+    image: '/images/products/tiempo-legend-10.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -292,7 +292,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 19500,
     category: 'Football',
     brand: 'Adidas',
-    image: '/images/products/predator-accuracy.svg',
+    image: '/images/products/predator-accuracy.jpg',
     inStock: false,
     featured: false,
     specifications: {
@@ -312,7 +312,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 34900,
     category: 'Fitness & Gym',
     brand: 'Bowflex',
-    image: '/images/products/bowflex-selecttech-552.svg',
+    image: '/images/products/bowflex-selecttech-552.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -331,7 +331,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 42900,
     category: 'Fitness & Gym',
     brand: 'Domyos',
-    image: '/images/products/domyos-500-treadmill.svg',
+    image: '/images/products/domyos-500-treadmill.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -351,7 +351,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 68900,
     category: 'Fitness & Gym',
     brand: 'Rogue',
-    image: '/images/products/rogue-echo-bike.svg',
+    image: '/images/products/rogue-echo-bike.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -371,7 +371,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 1200,
     category: 'Fitness & Gym',
     brand: 'FitLifestyle',
-    image: '/images/products/yoga-mat-tpe-6mm.svg',
+    image: '/images/products/yoga-mat-tpe-6mm.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -390,7 +390,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 1800,
     category: 'Fitness & Gym',
     brand: 'FitLifestyle',
-    image: '/images/products/resistance-bands-set.svg',
+    image: '/images/products/resistance-bands-set.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -410,7 +410,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 1400,
     category: 'Accessories',
     brand: 'Nike',
-    image: '/images/products/nike-elite-socks.svg',
+    image: '/images/products/nike-elite-socks.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -429,7 +429,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 3800,
     category: 'Accessories',
     brand: 'Under Armour',
-    image: '/images/products/ua-hustle-backpack.svg',
+    image: '/images/products/ua-hustle-backpack.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -449,7 +449,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 4200,
     category: 'Accessories',
     brand: 'Speedo',
-    image: '/images/products/speedo-fastskin-goggles.svg',
+    image: '/images/products/speedo-fastskin-goggles.jpg',
     inStock: true,
     featured: false,
     specifications: {
@@ -468,7 +468,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 38900,
     category: 'Accessories',
     brand: 'Garmin',
-    image: '/images/products/garmin-265.svg',
+    image: '/images/products/garmin-265.jpg',
     inStock: true,
     featured: true,
     specifications: {
@@ -488,7 +488,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     price: 16900,
     category: 'Accessories',
     brand: 'Therabody',
-    image: '/images/products/theragun-mini.svg',
+    image: '/images/products/theragun-mini.jpg',
     inStock: true,
     featured: false,
     specifications: {
