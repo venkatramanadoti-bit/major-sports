@@ -35,12 +35,13 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" aria-labelledby="hero-heading">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/sports-store-background.jpg"
+          src="https://img.magnific.com/premium-photo/sports-equipment-store-with-gear-various-sports-fitness-activities_1314467-200078.jpg?semt=ais_hybrid&w=740&q=80"
           alt="MAJOR SPORTS store interior showing sports equipment for various sports and fitness activities"
           fill
           priority
           className="object-cover"
           sizes="100vw"
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/50 to-navy/30" aria-hidden="true" />
       </div>

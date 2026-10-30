@@ -4,6 +4,8 @@
  * All products are clearly marked as demo/unverified inventory.
  */
 
+import { PRODUCT_IMAGES } from './product-image-map'
+
 export interface DemoProduct {
   id: string
   name: string
@@ -12,10 +14,16 @@ export interface DemoProduct {
   category: string
   brand: string
   image: string
+  imageUrl: string
   inStock: boolean
   featured: boolean
   specifications?: Record<string, string>
   tags?: string[]
+}
+
+function getProductImageUrl(imageKey: string): string {
+  const key = imageKey as keyof typeof PRODUCT_IMAGES
+  return PRODUCT_IMAGES[key]?.url || `/images/products/${imageKey}.jpg`
 }
 
 export const DEMO_PRODUCTS: DemoProduct[] = [
@@ -28,6 +36,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Badminton',
     brand: 'Yonex',
     image: '/images/products/yonex-astrox-77-pro.jpg',
+    imageUrl: getProductImageUrl('yonex-astrox-77-pro'),
     inStock: true,
     featured: true,
     specifications: {
@@ -47,6 +56,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Badminton',
     brand: 'Li-Ning',
     image: '/images/products/linning-aeronaut-9000c.jpg',
+    imageUrl: getProductImageUrl('linning-aeronaut-9000c'),
     inStock: true,
     featured: true,
     specifications: {
@@ -66,6 +76,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Badminton',
     brand: 'Victor',
     image: '/images/products/victor-thruster-k9900.jpg',
+    imageUrl: getProductImageUrl('victor-thruster-k9900'),
     inStock: true,
     featured: false,
     specifications: {
@@ -85,6 +96,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Badminton',
     brand: 'Yonex',
     image: '/images/products/yonex-mavis-350.jpg',
+    imageUrl: getProductImageUrl('yonex-mavis-350'),
     inStock: true,
     featured: false,
     specifications: {
@@ -103,6 +115,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Badminton',
     brand: 'Li-Ning',
     image: '/images/products/linning-a800-feather.jpg',
+    imageUrl: getProductImageUrl('linning-a800-feather'),
     inStock: false,
     featured: false,
     specifications: {
@@ -123,6 +136,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Cricket',
     brand: 'SG',
     image: '/images/products/sg-players-edition.jpg',
+    imageUrl: getProductImageUrl('sg-players-edition'),
     inStock: true,
     featured: true,
     specifications: {
@@ -142,6 +156,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Cricket',
     brand: 'Kookaburra',
     image: '/images/products/kookaburra-kahuna-pro.jpg',
+    imageUrl: getProductImageUrl('kookaburra-kahuna-pro'),
     inStock: true,
     featured: true,
     specifications: {
@@ -161,6 +176,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Cricket',
     brand: 'Gray-Nicolls',
     image: '/images/products/graynicolls-legend.jpg',
+    imageUrl: getProductImageUrl('graynicolls-legend'),
     inStock: true,
     featured: false,
     specifications: {
@@ -179,6 +195,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Cricket',
     brand: 'SG',
     image: '/images/products/sg-tournament-ball.jpg',
+    imageUrl: getProductImageUrl('sg-tournament-ball'),
     inStock: true,
     featured: false,
     specifications: {
@@ -198,6 +215,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Cricket',
     brand: 'DSC',
     image: '/images/products/dsc-krunch-kashmir.jpg',
+    imageUrl: getProductImageUrl('dsc-krunch-kashmir'),
     inStock: true,
     featured: false,
     specifications: {
@@ -218,6 +236,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Football',
     brand: 'Nike',
     image: '/images/products/nike-flight-ball.jpg',
+    imageUrl: getProductImageUrl('nike-flight-ball'),
     inStock: true,
     featured: true,
     specifications: {
@@ -237,6 +256,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Football',
     brand: 'Adidas',
     image: '/images/products/adidas-al-rihla-pro.jpg',
+    imageUrl: getProductImageUrl('adidas-al-rihla-pro'),
     inStock: true,
     featured: true,
     specifications: {
@@ -256,6 +276,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Football',
     brand: 'Puma',
     image: '/images/products/puma-future-7.jpg',
+    imageUrl: getProductImageUrl('puma-future-7'),
     inStock: true,
     featured: false,
     specifications: {
@@ -275,6 +296,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Football',
     brand: 'Nike',
     image: '/images/products/tiempo-legend-10.jpg',
+    imageUrl: getProductImageUrl('tiempo-legend-10'),
     inStock: true,
     featured: false,
     specifications: {
@@ -293,6 +315,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Football',
     brand: 'Adidas',
     image: '/images/products/predator-accuracy.jpg',
+    imageUrl: getProductImageUrl('predator-accuracy'),
     inStock: false,
     featured: false,
     specifications: {
@@ -313,6 +336,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Fitness & Gym',
     brand: 'Bowflex',
     image: '/images/products/bowflex-selecttech-552.jpg',
+    imageUrl: getProductImageUrl('bowflex-selecttech-552'),
     inStock: true,
     featured: true,
     specifications: {
@@ -332,6 +356,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Fitness & Gym',
     brand: 'Domyos',
     image: '/images/products/domyos-500-treadmill.jpg',
+    imageUrl: getProductImageUrl('domyos-500-treadmill'),
     inStock: true,
     featured: true,
     specifications: {
@@ -352,6 +377,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Fitness & Gym',
     brand: 'Rogue',
     image: '/images/products/rogue-echo-bike.jpg',
+    imageUrl: getProductImageUrl('rogue-echo-bike'),
     inStock: true,
     featured: false,
     specifications: {
@@ -372,6 +398,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Fitness & Gym',
     brand: 'FitLifestyle',
     image: '/images/products/yoga-mat-tpe-6mm.jpg',
+    imageUrl: getProductImageUrl('yoga-mat-tpe-6mm'),
     inStock: true,
     featured: false,
     specifications: {
@@ -391,6 +418,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Fitness & Gym',
     brand: 'FitLifestyle',
     image: '/images/products/resistance-bands-set.jpg',
+    imageUrl: getProductImageUrl('resistance-bands-set'),
     inStock: true,
     featured: false,
     specifications: {
@@ -411,6 +439,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Accessories',
     brand: 'Nike',
     image: '/images/products/nike-elite-socks.jpg',
+    imageUrl: getProductImageUrl('nike-elite-socks'),
     inStock: true,
     featured: false,
     specifications: {
@@ -430,6 +459,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Accessories',
     brand: 'Under Armour',
     image: '/images/products/ua-hustle-backpack.jpg',
+    imageUrl: getProductImageUrl('ua-hustle-backpack'),
     inStock: true,
     featured: true,
     specifications: {
@@ -450,6 +480,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Accessories',
     brand: 'Speedo',
     image: '/images/products/speedo-fastskin-goggles.jpg',
+    imageUrl: getProductImageUrl('speedo-fastskin-goggles'),
     inStock: true,
     featured: false,
     specifications: {
@@ -469,6 +500,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Accessories',
     brand: 'Garmin',
     image: '/images/products/garmin-265.jpg',
+    imageUrl: getProductImageUrl('garmin-265'),
     inStock: true,
     featured: true,
     specifications: {
@@ -489,6 +521,7 @@ export const DEMO_PRODUCTS: DemoProduct[] = [
     category: 'Accessories',
     brand: 'Therabody',
     image: '/images/products/theragun-mini.jpg',
+    imageUrl: getProductImageUrl('theragun-mini'),
     inStock: true,
     featured: false,
     specifications: {

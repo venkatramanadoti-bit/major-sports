@@ -91,7 +91,25 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="space-y-4">
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-slate-50 shadow-soft">
-                {product.image ? (
+                {product.imageUrl ? (
+                  <a
+                    href={product.imageUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block aspect-square"
+                    aria-label={`View larger image of ${product.name}`}
+                  >
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      fill
+                      priority
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      unoptimized
+                    />
+                  </a>
+                ) : product.image ? (
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -277,7 +295,27 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                 >
                   <Link href={`/products/${relatedProduct.id}`} className="block">
                     <div className="relative aspect-square overflow-hidden bg-slate-50">
-                      {relatedProduct.image ? (
+                      {relatedProduct.imageUrl ? (
+                        <a
+                          href={relatedProduct.imageUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block aspect-square"
+                          aria-label={`View larger image of ${relatedProduct.name}`}
+                        >
+                          <Image
+                            src={relatedProduct.imageUrl}
+                            alt={relatedProduct.name}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+                            unoptimized
+                          />
+                        </a>
+                      ) : relatedProduct.image ? (
                         <Image
                           src={relatedProduct.image}
                           alt={relatedProduct.name}

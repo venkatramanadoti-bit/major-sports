@@ -19,7 +19,27 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       className="group bg-white rounded-2xl shadow-card border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-elevated hover:-translate-y-1"
     >
       <div className="relative aspect-square overflow-hidden bg-slate-50">
-        {product.image ? (
+        {product.imageUrl ? (
+          <a
+            href={product.imageUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block aspect-square overflow-hidden"
+            aria-label={`View larger image of ${product.name}`}
+          >
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              loading={priority ? 'eager' : 'lazy'}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+              unoptimized
+            />
+          </a>
+        ) : product.image ? (
           <Image
             src={product.image}
             alt={product.name}
