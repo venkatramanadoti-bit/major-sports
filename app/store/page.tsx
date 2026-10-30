@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
-import { MapPin, MessageSquare, Clock, Phone, ArrowRight } from 'lucide-react'
+import { MapPin, MessageSquare, Clock, Phone, ArrowRight, Shield, Star, Truck, Users, Building2 } from 'lucide-react'
 import { getWhatsAppNumber, getGoogleMapsUrl } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/major-sports-store-1.svg',
+        url: '/images/major-sports-store-interior.svg',
         width: 1200,
         height: 800,
-        alt: 'MAJOR SPORTS store exterior',
+        alt: 'MAJOR SPORTS store interior',
       },
     ],
   },
@@ -158,7 +158,7 @@ export default function StorePage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
                 <Image
                   src="/images/major-sports-store-1.svg"
-                  alt="MAJOR SPORTS store exterior showing the storefront and location"
+                  alt="MAJOR SPORTS store exterior showing the storefront and location in Medchal"
                   fill
                   priority
                   className="object-cover"
@@ -168,8 +168,8 @@ export default function StorePage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
                 <Image
-                  src="/images/major-sports-store-2.svg"
-                  alt="MAJOR SPORTS store interior showing badminton rackets, sports equipment, accessories and retail shelving"
+                  src="/images/major-sports-store-interior.svg"
+                  alt="MAJOR SPORTS store interior showing badminton rackets, cricket bats, footballs, fitness equipment and accessories on display shelves"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -230,6 +230,123 @@ export default function StorePage() {
                 <p className="text-slate-600">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Premium Visit MAJOR SPORTS Section */}
+      <section className="py-24 md:py-32 bg-gradient-to-b from-slate-50 to-white" aria-labelledby="visit-premium-heading">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)]">
+              <Image
+                src="/images/major-sports-store-interior.svg"
+                alt="MAJOR SPORTS store interior - spacious showroom with badminton rackets, cricket equipment, football gear, fitness machines and sports accessories"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" aria-hidden="true" />
+              <div className="absolute bottom-8 left-8 right-8">
+                <div className="flex flex-wrap gap-3">
+                  <span className="px-4 py-2 bg-emerald/90 text-white text-sm font-medium rounded-full backdrop-blur-sm flex items-center gap-2">
+                    <Shield className="w-4 h-4" aria-hidden="true" />
+                    Quality Assured
+                  </span>
+                  <span className="px-4 py-2 bg-white/90 text-navy text-sm font-medium rounded-full backdrop-blur-sm flex items-center gap-2">
+                    <Truck className="w-4 h-4" aria-hidden="true" />
+                    Store Pickup
+                  </span>
+                  <span className="px-4 py-2 bg-amber/90 text-white text-sm font-medium rounded-full backdrop-blur-sm flex items-center gap-2">
+                    <Star className="w-4 h-4" aria-hidden="true" />
+                    Expert Advice
+                  </span>
+                  <span className="px-4 py-2 bg-white/90 text-navy text-sm font-medium rounded-full backdrop-blur-sm flex items-center gap-2">
+                    <Users className="w-4 h-4" aria-hidden="true" />
+                    Local Community
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 text-emerald rounded-full text-sm font-medium">
+                <Building2 className="w-4 h-4" aria-hidden="true" />
+                Visit MAJOR SPORTS
+              </div>
+
+              <h2 id="visit-premium-heading" className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
+                Experience Sports Gear Like Never Before
+              </h2>
+
+              <p className="text-slate-600 text-lg leading-relaxed max-w-xl">
+                Step into our Medchal showroom and discover a curated selection of premium sports equipment across badminton, cricket, football, fitness, and accessories. Touch, feel, and test before you buy.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-card border border-slate-100 hover:shadow-elevated transition-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 bg-emerald/10 rounded-xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-emerald" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-navy mb-1">Prime Location</h3>
+                    <p className="text-slate-600 text-sm">Phase B, Plot 44, Near Shivaji Statue, Medchal, Secunderabad</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-card border border-slate-100 hover:shadow-elevated transition-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 bg-amber/10 rounded-xl flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-amber" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-navy mb-1">Extended Hours</h3>
+                    <p className="text-slate-600 text-sm">Mon–Sat: 10 AM – 9 PM • Sun: 11 AM – 7 PM</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-card border border-slate-100 hover:shadow-elevated transition-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue/10 rounded-xl flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-blue-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-navy mb-1">Verified Quality</h3>
+                    <p className="text-slate-600 text-sm">Authentic products from authorized brand distributors</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-5 bg-white rounded-2xl shadow-card border border-slate-100 hover:shadow-elevated transition-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 bg-purple/10 rounded-xl flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-purple-600" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-navy mb-1">WhatsApp Support</h3>
+                    <p className="text-slate-600 text-sm">Chat with our experts before you visit</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-slate-200">
+                <a
+                  href={storeInfo.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-navy text-white font-semibold rounded-xl hover:bg-navy-light transition-all shadow-lg hover:shadow-xl"
+                >
+                  <MapPin className="w-5 h-5" aria-hidden="true" />
+                  <span>Get Directions</span>
+                </a>
+                <a
+                  href={storeInfo.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald text-white font-semibold rounded-xl hover:bg-emerald-dark transition-all shadow-lg hover:shadow-xl"
+                >
+                  <MessageSquare className="w-5 h-5" aria-hidden="true" />
+                  <span>WhatsApp Us</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

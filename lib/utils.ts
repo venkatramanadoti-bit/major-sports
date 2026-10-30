@@ -2,7 +2,7 @@ import { Product as PrismaProduct } from '@prisma/client'
 import { DemoProduct } from './demo-data'
 
 export function getWhatsAppNumber(): string {
-  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '06302324007'
+  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '916302324007'
 }
 
 export function getGoogleMapsUrl(): string {

@@ -1,11 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
   <rect width="1200" height="800" fill="#0f172a"/>
-  <rect x="100" y="150" width="1000" height="500" fill="#1e293b" rx="12" stroke="#059669" stroke-width="3"/>
-  <text x="600" y="300" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#059669" text-anchor="middle">MAJOR SPORTS</text>
-  <text x="600" y="370" font-family="system-ui, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Store Exterior</text>
-  <text x="600" y="430" font-family="system-ui, sans-serif" font-size="18" fill="#64748b" text-anchor="middle">Medchal, Secunderabad</text>
-  <text x="600" y="470" font-family="system-ui, sans-serif" font-size="16" fill="#475569" text-anchor="middle">Phase B, Plot No. 44 Part</text>
-  <text x="600" y="500" font-family="system-ui, sans-serif" font-size="16" fill="#475569" text-anchor="middle">Next to Sakshi Pharmacy, Near Shivaji Statue</text>
-  <rect x="450" y="560" width="300" height="50" rx="8" fill="#059669"/>
-  <text x="600" y="595" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Get Directions</text>
+  <rect x="0" y="0" width="1200" height="800" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Building facade -->
+  <rect x="200" y="150" width="800" height="500" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Main entrance -->
+  <rect x="550" y="350" width="100" height="300" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="3"/>
+  <rect x="560" y="360" width="80" height="280" rx="2" fill="#1e293b"/>
+  <line x1="600" y1="360" x2="600" y2="640" stroke="#10b981" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- Store name signage -->
+  <rect x="350" y="100" width="500" height="80" rx="12" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="155" font-family="system-ui, sans-serif" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">MAJOR SPORTS</text>
+  <text x="600" y="178" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">Your Local Sports Gear Hub</text>
+  
+  <!-- Windows with sports equipment silhouettes -->
+  <g fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.3">
+    <!-- Window 1 - Badminton -->
+    <rect x="230" y="200" width="140" height="120" rx="4"/>
+    <g transform="translate(300, 260)">
+      <path d="M0,0 Q30,-50 60,0 Q30,25 0,0" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M-10,0 Q20,-50 50,0 Q20,25 -10,0" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+    
+    <!-- Window 2 - Cricket -->
+    <rect x="390" y="200" width="140" height="120" rx="4"/>
+    <g transform="translate(460, 280)">
+      <rect x="-8" y="0" width="16" height="80" rx="3" fill="#8b4513" opacity="0.5"/>
+      <ellipse cx="0" cy="-15" rx="30" ry="12" fill="#8b4513" opacity="0.5"/>
+    </g>
+    
+    <!-- Window 3 - Football -->
+    <rect x="550" y="200" width="140" height="120" rx="4"/>
+    <g transform="translate(620, 260)">
+      <circle cx="0" cy="0" r="25" stroke="#3b82f6" stroke-width="2"/>
+      <path d="M-25,0 Q0,-15 25,0" stroke="#3b82f6" stroke-width="1.5"/>
+      <path d="M0,-25 Q15,0 0,25" stroke="#3b82f6" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Window 4 - Fitness -->
+    <rect x="710" y="200" width="140" height="120" rx="4"/>
+    <g transform="translate(780, 260)" fill="#8b5cf6" opacity="0.4">
+      <rect x="-30" y="-5" width="60" height="10" rx="5"/>
+      <rect x="-40" y="-5" width="10" height="10" rx="2"/>
+      <rect x="30" y="-5" width="10" height="10" rx="2"/>
+    </g>
+    
+    <!-- Window 5 - Accessories -->
+    <rect x="870" y="200" width="100" height="120" rx="4"/>
+    <g transform="translate(920, 260)">
+      <path d="M-20,20 L-20,-30 Q0,-45 20,-30 L20,20 Z" stroke="#ec4899" stroke-width="2" fill="none"/>
+      <circle cx="0" cy="-10" r="8" stroke="#ec4899" stroke-width="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Lower windows -->
+  <g fill="none" stroke="#10b981" stroke-width="1" opacity="0.2">
+    <rect x="230" y="380" width="140" height="100" rx="4"/>
+    <rect x="390" y="380" width="140" height="100" rx="4"/>
+    <rect x="550" y="380" width="140" height="100" rx="4"/>
+    <rect x="710" y="380" width="140" height="100" rx="4"/>
+    <rect x="870" y="380" width="100" height="100" rx="4"/>
+  </g>
+  
+  <!-- Address bar -->
+  <rect x="200" y="680" width="800" height="60" rx="8" fill="#10b981" opacity="0.1" stroke="#10b981" stroke-width="1"/>
+  <text x="600" y="715" font-family="system-ui, sans-serif" font-size="16" fill="#10b981" text-anchor="middle">Phase B, Plot No. 44 Part • Next to Sakshi Pharmacy</text>
+  <text x="600" y="735" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Near Shivaji Statue, NJR KLR Nagar • Medchal, Secunderabad, Telangana – 501401</text>
+  
+  <!-- Watermark -->
+  <text x="600" y="780" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" opacity="0.5">MAJOR SPORTS • Demo Store Exterior</text>
 </svg>
