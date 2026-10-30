@@ -3,10 +3,10 @@
 import Image from 'next/image'
 import { MessageSquare, CheckCircle, XCircle, Clock } from 'lucide-react'
 import { formatPrice, buildProductEnquiryUrl } from '@/lib/utils'
-import { Product } from '@prisma/client'
+import { DemoProduct } from '@/lib/demo-data'
 
 interface ProductCardProps {
-  product: Product
+  product: DemoProduct
   priority?: boolean
 }
 

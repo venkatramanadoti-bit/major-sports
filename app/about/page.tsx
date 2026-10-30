@@ -170,7 +170,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
               <Image
-                src="/images/major-sports-store-1.jpg"
+                src="/images/major-sports-store-1.svg"
                 alt="MAJOR SPORTS store interior showing our team helping customers"
                 fill
                 priority
@@ -276,7 +276,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
               <Image
-                src="/images/major-sports-store-2.jpg"
+                src="/images/major-sports-store-2.svg"
                 alt="MAJOR SPORTS store interior"
                 fill
                 className="object-cover"

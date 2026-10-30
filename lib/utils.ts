@@ -1,4 +1,5 @@
-import { Product } from '@prisma/client'
+import { Product as PrismaProduct } from '@prisma/client'
+import { DemoProduct } from './demo-data'
 
 export function getWhatsAppNumber(): string {
   return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '06302324007'
@@ -8,7 +9,9 @@ export function getGoogleMapsUrl(): string {
   return process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL || 'https://maps.app.goo.gl/bcFHEGuExfcXQLDK8?g_st=aw'
 }
 
-export function buildProductEnquiryUrl(product: Product): string {
+export type ProductForEnquiry = Pick<PrismaProduct, 'name' | 'price' | 'category'> & Pick<DemoProduct, 'name' | 'price' | 'category'>
+
+export function buildProductEnquiryUrl(product: ProductForEnquiry): string {
   const number = getWhatsAppNumber()
   const message = `Hi MAJOR SPORTS! 👋
 

@@ -1,10 +1,10 @@
 'use client'
 
 import { ProductCard } from './ProductCard'
-import { Product } from '@prisma/client'
+import { DemoProduct } from '@/lib/demo-data'
 
 interface ProductGridProps {
-  products: Product[]
+  products: DemoProduct[]
   loading?: boolean
   emptyMessage?: string
 }

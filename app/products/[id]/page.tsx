@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { ArrowLeft, CheckCircle, XCircle, Truck, Shield, Star, MessageSquare, Share2 } from 'lucide-react'
 import Link from 'next/link'
-import { getProductById, getDemoProducts, buildProductEnquiryUrl, formatPrice } from '@/lib/demo-data'
-import { getWhatsAppNumber, getGoogleMapsUrl } from '@/lib/utils'
+import { getProductById, getDemoProducts } from '@/lib/demo-data'
+import { getWhatsAppNumber, getGoogleMapsUrl, buildProductEnquiryUrl, formatPrice } from '@/lib/utils'
 
 interface ProductDetailPageProps {
   params: Promise<{ id: string }>

@@ -3,6 +3,7 @@ import { StoreSection } from '@/components/StoreSection'
 import { ProductGrid } from '@/components/ProductGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { getDemoProducts, getFeaturedProducts } from '@/lib/demo-data'
+import { Suspense } from 'react'
 
 export default function HomePage() {
   const featuredProducts = getFeaturedProducts(8)
@@ -48,7 +49,9 @@ export default function HomePage() {
               Find the perfect equipment for your favorite sport. From professional gear to beginner essentials.
             </p>
           </div>
-          <CategoryFilter />
+          <Suspense fallback={<div className="h-32 animate-pulse bg-slate-50 rounded-xl" />}>
+            <CategoryFilter />
+          </Suspense>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRight, MapPin, MessageSquare, Truck, Shield, Star } from 'lucide-react'
+import { ArrowRight, MapPin, MessageSquare, Truck, Shield, Star, ShoppingBag } from 'lucide-react'
 import { getWhatsAppNumber, getGoogleMapsUrl } from '@/lib/utils'
 import Image from 'next/image'
 
@@ -35,7 +35,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" aria-labelledby="hero-heading">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/major-sports-store-1.jpg"
+          src="/images/major-sports-store-1.svg"
           alt="MAJOR SPORTS store interior showing sports equipment, badminton rackets, balls, bicycles and shelves"
           fill
           priority

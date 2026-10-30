@@ -14,7 +14,7 @@ export function StoreSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative aspect-[4/3] md:aspect-[3/2] rounded-2xl overflow-hidden shadow-elevated">
             <Image
-              src="/images/major-sports-store-2.jpg"
+              src="/images/major-sports-store-2.svg"
               alt="MAJOR SPORTS store interior showing badminton rackets, sports equipment, accessories and retail shelving"
               fill
               priority

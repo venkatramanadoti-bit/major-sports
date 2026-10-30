@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/major-sports-store-1.jpg',
+        url: '/images/major-sports-store-1.svg',
         width: 1200,
-        height: 630,
+        height: 800,
         alt: 'MAJOR SPORTS store exterior',
       },
     ],
@@ -157,7 +157,7 @@ export default function StorePage() {
             <div className="space-y-8">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
                 <Image
-                  src="/images/major-sports-store-1.jpg"
+                  src="/images/major-sports-store-1.svg"
                   alt="MAJOR SPORTS store exterior showing the storefront and location"
                   fill
                   priority
@@ -168,7 +168,7 @@ export default function StorePage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
                 <Image
-                  src="/images/major-sports-store-2.jpg"
+                  src="/images/major-sports-store-2.svg"
                   alt="MAJOR SPORTS store interior showing badminton rackets, sports equipment, accessories and retail shelving"
                   fill
                   className="object-cover"
